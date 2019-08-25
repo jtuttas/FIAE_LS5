@@ -7,7 +7,7 @@ import java.net.URL;
 import org.json.*;
 public class App {
     public static void main(String[] args) throws Exception {
-        URL url = new URL("http://service.joerg-tuttas.de:8266/json");
+        URL url = new URL("https://api.openweathermap.org/data/2.5/weather?q=Hanover,de&appid=4727c8383bacbff7ac85de94ec48c85c");
 
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
 
@@ -29,7 +29,7 @@ public class App {
 
         // Einlesen als JSON
         JSONObject obj = new JSONObject(response.toString());
-        System.out.println("Temperatur ist:"+obj.getFloat("temperature")+" °C");
+        System.out.println("Temperatur ist:"+obj.getJSONObject("main").getFloat("temp")+" K");
         
     }
 }
