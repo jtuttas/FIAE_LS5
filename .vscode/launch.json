@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "name": "Python",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": true,
+            "program": "${workspaceFolder}/App.py",
+            "debugOptions": [
+                "WaitOnAbnormalExit",
+                "WaitOnNormalExit",
+                "RedirectOutput"
+            ]
+        },
+        {
+            "name": "PowerShell Launch ",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}/App.ps1",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "java",
+            "name": "Java Launch",
+            "request": "launch",
+            "mainClass": "src.main.java.esp8266.App",
+            "projectName": "esp8266_b5ff099a"
+        }
+    ]
+}
