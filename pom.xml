@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>esp8266</groupId>
-    <artifactId>esp8266</artifactId>
+    <groupId>javarest</groupId>
+    <artifactId>javarest</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -16,10 +16,15 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-        <groupId>org.json</groupId>
-        <artifactId>json</artifactId>
-         <systemPath>${basedir}/lib/json-20190722.jar</systemPath>
-        <version>20190722</version>
+
+
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <systemPath>${basedir}/lib/json-20190722.jar</systemPath>
+            <version>20190722</version>
+            <scope>system</scope>
+        </dependency>
     </dependencies>
     <build>
         <pluginManagement>

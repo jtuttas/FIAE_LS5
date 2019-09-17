@@ -1,13 +1,15 @@
-package src.main.java.esp8266;
+package esp8266;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import org.json.*;
+
+import org.json.JSONObject;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        URL url = new URL("https://api.openweathermap.org/data/2.5/weather?q=Hanover,de&appid=4727c8383bacbff7ac85de94ec48c85c");
+        URL url = new URL("http://192.168.155.17:8080/get?pressure");
 
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
 
@@ -28,8 +30,9 @@ public class App {
         System.out.println("HTTP Respoce: "+response.toString());
 
         // Einlesen als JSON
+        
         JSONObject obj = new JSONObject(response.toString());
-        System.out.println("Temperatur ist:"+obj.getJSONObject("main").getFloat("temp")+" K");
+        System.out.println("Druck ist:"+obj.getJSONObject("buffer").getJSONObject("pressure").getJSONArray("buffer").getDouble(0)+" mBAR");
         
     }
 }
