@@ -33,6 +33,5 @@ public class App {
         
         JSONObject obj = new JSONObject(response.toString());
         System.out.println("Druck ist:"+obj.getJSONObject("buffer").getJSONObject("pressure").getJSONArray("buffer").getDouble(0)+" mBAR");
-        
     }
 }
