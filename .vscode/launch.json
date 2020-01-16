@@ -1,18 +1,6 @@
 {
     "configurations": [
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - App",
-            "request": "launch",
-            "mainClass": "esp8266.App",
-            "projectName": "javarest"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - App",
-            "request": "launch",
-            "mainClass": "src.main.java.esp8266.App"
-        },
+        
         {
             "name": "Python",
             "type": "python",
@@ -37,8 +25,8 @@
             "type": "java",
             "name": "Java Launch",
             "request": "launch",
-            "mainClass": "src.main.java.esp8266.App",
-            "projectName": "esp8266_b5ff099a"
+            "mainClass": "esp8266.App",
+            "projectName": "javarest"
         }
     ]
 }

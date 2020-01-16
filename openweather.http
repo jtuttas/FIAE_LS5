@@ -1,7 +1,0 @@
-
-# Wether MAP
-
-GET https://api.openweathermap.org/data/2.5/weather?q=Hanover,de&appid=4727c8383bacbff7ac85de94ec48c85c HTTP/1.1
-
-### PhyBox
-GET http://192.168.155.17:8080/get?pressure HTTP/1.1

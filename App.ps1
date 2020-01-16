@@ -1,2 +1,2 @@
-$data=Invoke-RestMethod -Uri "https://api.openweathermap.org/data/2.5/weather?q=Hanover,de&appid=4727c8383bacbff7ac85de94ec48c85c"
-Write-Host "Temperatur: $($data.main.temp) K"
+$data=Invoke-RestMethod -Uri "http://192.168.178.87:8080/get?pressure"
+Write-Host "Pressure: $($data.buffer.pressure.buffer) mBar"

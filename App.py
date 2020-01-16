@@ -1,9 +1,9 @@
 import requests
 import json
 
-r = requests.get('https://api.openweathermap.org/data/2.5/weather?q=Hanover,de&appid=4727c8383bacbff7ac85de94ec48c85c')
+r = requests.get('http://192.168.178.87:8080/get?pressure')
 r.json()
 content = str(r.content, 'utf-8')
-print (content)
+#print (content)
 data = json.loads(content)
-print ("Temperatur="+str(data["main"]["temp"]))
+print ("Pressure="+str(data["buffer"]["pressure"]["buffer"][0])+" mBar")

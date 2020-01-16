@@ -11,7 +11,7 @@ import org.json.JSONObject;
 public class App {
     
     public App() throws IOException {
-        URL url = new URL("http://192.168.155.17:8080/get?pressure");
+        URL url = new URL("http://192.168.178.87:8080/get?pressure");
 
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
 
@@ -27,7 +27,7 @@ public class App {
             response.append(inputLine);
         }
         in.close();
-        System.out.println("HTTP Respoce: "+response.toString());
+        System.out.println("HTTP Responce: "+response.toString());
         JSONObject obj = new JSONObject(response.toString());
         System.out.println("Druck ist:"+obj.getJSONObject("buffer").getJSONObject("pressure").getJSONArray("buffer").getDouble(0)+" mBAR");
     }
