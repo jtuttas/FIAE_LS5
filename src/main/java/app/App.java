@@ -1,4 +1,4 @@
-package esp8266;
+package app;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -31,6 +31,11 @@ public class App {
         JSONObject obj = new JSONObject(response.toString());
         System.out.println("Druck ist:"+obj.getJSONObject("buffer").getJSONObject("pressure").getJSONArray("buffer").getDouble(0)+" mBAR");
     }
+
+    public static int max(int a, int b) {
+        return a;
+    }
+
     public static void main(String[] args) throws Exception {
         new App();
     }
