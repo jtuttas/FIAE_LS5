@@ -33,7 +33,7 @@ public class App {
     }
 
     public static int max(int a, int b) {
-        return a;
+        return b;
     }
 
     public static void main(String[] args) throws Exception {
