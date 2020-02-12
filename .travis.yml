@@ -1,13 +1,9 @@
 sudo: false
 language: java
-
-cache:
-  directories:
-  - "$HOME/.cache"
-
 deploy:
-  provider: script
-  script: "mvn package -Dcheckstyle.skip."
+  provider: releases
+  api-key: "$GITHUB_OAUTH_TOKEN"
+  file: "target/javarest-1.0-SNAPSHOT.jar"
   skip_cleanup: true
   on:
-    tags: true
+    branch: master
