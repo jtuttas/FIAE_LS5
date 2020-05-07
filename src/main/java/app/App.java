@@ -27,5 +27,6 @@ public class App {
 
         System.out.println("HTTP Responce: "+inputLine);
         JSONObject obj = new JSONObject(inputLine);
-        System.out.println("Druck ist:"+obj.getJSONObject("buffer").getJSONObject("pressure").getJSONArray("buffer").getDouble(0)+" mBAR");    }
+        System.out.println("Druck ist:"+obj.getJSONObject("buffer").getJSONObject("pressure").getJSONArray("buffer").getDouble(0)+" mBAR");    
+    }
 }
