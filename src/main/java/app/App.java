@@ -2,17 +2,19 @@ package app;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Scanner;
 import org.json.JSONObject;
 
 public class App {
-    
 
     /**
      * main method
+     * 
+     * @throws IOException
      */
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws IOException {
         URL url = new URL("http://192.168.178.87:8080/get?pressure");
 
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
