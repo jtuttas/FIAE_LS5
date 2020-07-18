@@ -1,0 +1,22 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=827846 to learn about workspace recommendations.
+	// Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+
+	// List of extensions which should be recommended for users of this workspace.
+	"recommendations": [
+		"atomiks.moonlight",
+		"CoenraadS.bracket-pair-colorizer",
+		"hediet.vscode-drawio",
+		"humao.rest-client",
+		"PKief.material-icon-theme",
+		"pnp.polacode",
+		"redhat.java",
+		"redhat.vscode-yaml",
+		"sandcastle.vscode-open",
+		"vscjava.vscode-java-pack"		
+	],
+	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
+	"unwantedRecommendations": [
+		
+	]
+}
