@@ -12,14 +12,10 @@ vscode:
     - redhat.java
     - vscjava.vscode-java-debug
     - vscjava.vscode-java-test
-    - atomiks.moonlight
-    - atomiks.moonlight
     - hediet.vscode-drawio
     - humao.rest-client
     - PKief.material-icon-theme
-    - pnp.polacode
     - redhat.vscode-yaml
-    - sandcastle.vscode-open
     - vscjava.vscode-java-pack
     - donjayamanne.githistory
-    - theumletteam.umlet
+    - gruntfuggly.todo-tree
