@@ -22,5 +22,4 @@ vscode:
     - sandcastle.vscode-open
     - vscjava.vscode-java-pack
     - donjayamanne.githistory
-    - gruntfuggly.todo-tree
     - theumletteam.umlet
