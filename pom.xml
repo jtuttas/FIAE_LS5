@@ -22,7 +22,7 @@
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
             <systemPath>${basedir}/lib/json-20190722.jar</systemPath>
-            <version>20190722</version>
+            <version>20230227</version>
             <scope>system</scope>
         </dependency>
     </dependencies>
